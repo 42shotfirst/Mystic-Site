@@ -5,6 +5,7 @@
       <button v-on:click="$router.push('/')">Home</button>
       <button v-on:click="$router.push('/features')">Features</button>
     </div>
+    <div class="feats">
     <h4>Say Goodbye to Administration Costs.</h4>
     <p>Many business management tools take your money, send you on your own and advise you to hire your own administrator (for an additional cost!) as well as sifting through their documentation in order to figure out how to just get started using the platform.<br/>With Mystic CRM, We provide administration services from setup to continuous support, from occasional to frequent changes, depending on your level of need.</p>
     <div class="d"/>
@@ -24,6 +25,7 @@
     <p>
       Above all else, we respect your data privacy. Some companies try to spell out extensive limitations on what you can or can’t do with your information, or even try to put clauses in about reselling or restricting your data. We don’t believe in any of those notions. We champion the “Your Data, Your Rules” school of thought. We will never try to restrict your usage, and if you ever decide to leave our platform, we provide easy access to your data to allow you to transfer as painlessly as possible.
     </p>
+  </div>
   </div>
 </template>
 
@@ -68,7 +70,7 @@ button {
   height: 100%;
   width: 100%;
   position: fixed;
-  background: linear-gradient(63deg, #004873, #26a8ff, #7eabc9);
+  background: linear-gradient(77deg, #00273e, #1e9df2, #4c84a9);
 background-size: 600% 600%;
 
 -webkit-animation: AnimationName 15s ease infinite;
@@ -76,19 +78,19 @@ background-size: 600% 600%;
 animation: AnimationName 15s ease infinite;
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
+    0%{background-position:79% 0%}
+    50%{background-position:22% 100%}
+    100%{background-position:79% 0%}
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
+    0%{background-position:79% 0%}
+    50%{background-position:22% 100%}
+    100%{background-position:79% 0%}
 }
 @keyframes AnimationName {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
+    0%{background-position:79% 0%}
+    50%{background-position:22% 100%}
+    100%{background-position:79% 0%}
 }
 }
 .a {
@@ -124,5 +126,42 @@ p, h4 {
   font-family: @font;
   margin-left: 5%;
   margin-right: 5%;
+}
+@media (min-width: 1000px) {
+  .nav {
+    height: 150px;
+    grid-template-columns: repeat(3, 1fr) 40%;
+  }
+  .logo {
+    grid-column: 1;
+  }
+  button {
+    font-size: 2.5em;
+  }
+  h4 {
+    margin-left: 5%;
+    font-size: 3em;
+    text-align: left;
+    grid-column: 1;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    grid-column: 1;
+    font-size: 2em;
+  }
+  .feats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(12, 250px);
+  }
+  .a, .b, .c, .d {
+    height: 900px;
+    grid-column: 2;
+  }
+  .a {
+    grid-row: 10;
+  }
 }
 </style>

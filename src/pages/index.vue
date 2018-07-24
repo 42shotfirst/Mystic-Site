@@ -56,7 +56,7 @@ button {
   height: 100%;
   width: 100%;
   position: fixed;
-  background: linear-gradient(63deg, #004873, #26a8ff, #7eabc9);
+  background: linear-gradient(77deg, #00273e, #1e9df2, #4c84a9);
 background-size: 600% 600%;
 
 -webkit-animation: AnimationName 15s ease infinite;
@@ -64,19 +64,19 @@ background-size: 600% 600%;
 animation: AnimationName 15s ease infinite;
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
+    0%{background-position:79% 0%}
+    50%{background-position:22% 100%}
+    100%{background-position:79% 0%}
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
+    0%{background-position:79% 0%}
+    50%{background-position:22% 100%}
+    100%{background-position:79% 0%}
 }
 @keyframes AnimationName {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
+    0%{background-position:79% 0%}
+    50%{background-position:22% 100%}
+    100%{background-position:79% 0%}
 }
 }
 .screen {
@@ -103,5 +103,31 @@ h2 {
    color: white;
    margin-right: 5%;
    text-align: center;
+ }
+ @media (min-width: 1000px) {
+   .nav {
+     height: 150px;
+     grid-template-columns: repeat(3, 1fr) 40%;
+   }
+   .logo {
+     grid-column: 1;
+   }
+   button {
+     font-size: 2.5em;
+   }
+   h3 {
+     margin-left: 0;
+     font-size: 4em;
+     text-align: center;
+   }
+   h2 {
+     font-size: 2em;
+   }
+   p {
+     font-size: 2em;
+   }
+   .screen {
+     height:700px;
+   }
  }
 </style>

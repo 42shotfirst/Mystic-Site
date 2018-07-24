@@ -1,9 +1,9 @@
 {
   "name": "charity",
   "version": "1.0.0",
-  "description": "Charity Page",
-  "productName": "Charity",
-  "cordovaId": "org.cordova.quasar.app",
+  "description": "Mystic CRM Sales Site",
+  "productName": "Mystic",
+  "cordovaId": "site.mystic.com",
   "author": "Morgan Reed <morgan@morgankreed.com>",
   "private": true,
   "scripts": {

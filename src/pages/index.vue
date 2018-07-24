@@ -1,19 +1,107 @@
 <template>
   <div class="main">
-    <h3><em>Wouldn’t it be great if you could put all the boring tasks on autopilot?</em></h3>
-    <img src="../assets/New Lead Desktop.png" />
-    <p>Look, we get it. Whatever your business is, you do it because you want to do that.</p>
-    <p>Not the books, not updating clients, taking notes, or invoicing.</p>
-    <h6>What if you could cut down the time you spend on busywork, and shortcut all of it down to a few clicks?</h6>
-    <h3>Mystic makes that possible</h3>
+    <div class="nav">
+      <div class="logo"></div>
+      <button v-on:click="$router.push('/')">Home</button>
+      <button v-on:click="$router.push('/features')">Features</button>
+    </div>
+    <h3>What if you could put all your tedious tasks on autopilot?</h3>
+    <p>We get it. You want to spend your time on the parts of your business that you love.</p>
+    <p>You need a tool thats comprehensive, organized and above all easy to use!</p>
+    <div class="screen"></div>
+    <h2>Imagine if you could half the time spent on busywork AND increase your companies productivity,<br/> with only a few clicks.</h2>
+    <h3>No, it's not magic...</h3>
+    <h3>It's Mystic.</h3>
   </div>
 </template>
-
-<style>
-</style>
 
 <script>
 export default {
   name: 'PageIndex'
 }
 </script>
+
+<style scoped lang="less">
+@blue: #008be8;
+@darkBlue: #00578A;
+@lightBlue: #78CDFF;
+@grey: #323d38;
+@font: 'Cabin', sans-serif;
+.nav {
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 5%;
+    background-color: transparent;
+}
+.logo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url('../assets/mystic.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+button {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 1.3em;
+  font-family: @font;
+}
+.main {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(63deg, #004873, #26a8ff, #7eabc9);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 15s ease infinite;
+-moz-animation: AnimationName 15s ease infinite;
+animation: AnimationName 15s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+}
+.screen {
+  width: auto;
+  height: 600px;
+  background-image: url('../assets/login.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h3 {
+  color: white;
+  font-family: @font;
+  margin-left: 3%;
+  font-size: 2.3em;
+}
+h2 {
+  font-size: 1em;
+  color: white;
+  text-align: center;
+}
+ p {
+   margin-left: 5%;
+   color: white;
+   margin-right: 5%;
+   text-align: center;
+ }
+</style>

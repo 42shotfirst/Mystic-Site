@@ -7,7 +7,7 @@
     </div>
     <h3>What if you could put all your tedious tasks on autopilot?</h3>
     <p>We get it. You want to spend your time on the parts of your business that you love.</p>
-    <p>You need a tool thats comprehensive, organized and above all easy to use!</p>
+    <p>You need software thats comprehensive, organized and above all easy to use!</p>
     <div class="screen"></div>
     <h2>Imagine if you could half the time spent on busywork AND increase your companies productivity,<br/> with only a few clicks.</h2>
     <h3>No, it's not magic...</h3>

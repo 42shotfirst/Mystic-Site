@@ -137,7 +137,7 @@ h2 {
 @media (min-width: 1000px) {
   .nav {
     height: 150px;
-    grid-template-columns: repeat(4, 1fr) 40%;
+    grid-template-columns: 20px repeat(4, 1fr) 40%;
   }
   .logo {
     grid-column: 1;
@@ -159,9 +159,6 @@ h2 {
     font-size: 2em;
   }
   .feats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(12, 250px);
   }
   .a, .b, .c, .d {
     height: 900px;

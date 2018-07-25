@@ -106,10 +106,10 @@ h2 {
  @media (min-width: 1000px) {
    .nav {
      height: 150px;
-     grid-template-columns: repeat(4, 1fr) 40%;
+     grid-template-columns: 20px repeat(4, 1fr) 40%;
    }
    .logo {
-     grid-column: 1;
+     grid-column: 2;
    }
    button {
      font-size: 2.5em;

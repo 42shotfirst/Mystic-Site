@@ -6,16 +6,12 @@
       <button v-on:click="$router.push('/features')">Features</button>
       <button v-on:click="$router.push('/FAQ')">FAQ</button>
     </div>
-    <h3>What if you could put all your tedious tasks on autopilot?</h3>
-    <p class="top">We get it. You want to spend your time on the parts of your business that you love.</p>
-    <p>You need software thats comprehensive, organized and above all easy to use!</p>
-    <div class="screen"></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'faq'
 }
 </script>
 
@@ -101,7 +97,6 @@ h2 {
    color: white;
    margin-right: 5%;
    text-align: center;
-   font-size: 1.3em;
  }
  @media (min-width: 1000px) {
    .nav {

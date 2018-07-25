@@ -4,8 +4,10 @@
       <div class="logo"></div>
       <button v-on:click="$router.push('/')">Home</button>
       <button v-on:click="$router.push('/features')">Features</button>
+      <button v-on:click="$router.push('/FAQ')">FAQ</button>
     </div>
     <div class="feats">
+      <h2>Imagine if you could HALF the time spent on busywork <br/>AND<br/> increase your companies productivity,<br/> with only a few clicks.</h2>
     <h4>Say Goodbye to Administration Costs.</h4>
     <p>Many business management tools take your money, send you on your own and advise you to hire your own administrator (for an additional cost!) as well as sifting through their documentation in order to figure out how to just get started using the platform.<br/>With Mystic CRM, We provide administration services from setup to continuous support, from occasional to frequent changes, depending on your level of need.</p>
     <div class="d"/>
@@ -46,7 +48,7 @@ export default {
     height: 80px;
     z-index: 10;
     display: grid;
-    grid-template-columns: repeat(4, 1fr) 5%;
+    grid-template-columns: repeat(5, 1fr);
     background-color: transparent;
 }
 .logo {
@@ -121,16 +123,21 @@ animation: AnimationName 15s ease infinite;
   background-position: center;
   background-repeat: no-repeat;
 }
-p, h4 {
+p, h4, h2 {
   color: white;
   font-family: @font;
   margin-left: 5%;
   margin-right: 5%;
+  letter-spacing: 1px;
 }
+h2 {
+  text-align: center;
+}
+
 @media (min-width: 1000px) {
   .nav {
     height: 150px;
-    grid-template-columns: repeat(3, 1fr) 40%;
+    grid-template-columns: repeat(4, 1fr) 40%;
   }
   .logo {
     grid-column: 1;

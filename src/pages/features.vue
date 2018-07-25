@@ -8,7 +8,7 @@
     </div>
     <div class="feats">
       <h2>Imagine if you could HALF the time spent on busywork <br/>AND<br/> increase your companies productivity,<br/> with only a few clicks.</h2>
-    <h4>Say Goodbye to Administration Costs.</h4>
+    <h4>Say Goodbye to Admin Costs.</h4>
     <p>Many business management tools take your money, send you on your own and advise you to hire your own administrator (for an additional cost!) as well as sifting through their documentation in order to figure out how to just get started using the platform.<br/>With Mystic CRM, We provide administration services from setup to continuous support, from occasional to frequent changes, depending on your level of need.</p>
     <div class="d"/>
     <h4>Automate Anything.</h4>
@@ -23,7 +23,7 @@
     <p>Scheduling, sharing calendar events, and keeping your week organized is one of the biggest issues most companies struggle with. Mystics Calendar is set up to streamline all sharing issues, keep you connected to all of your tasks, and keep your team on a common schedule.</p>
     <h4>Your Personal Crystal Ball.</h4>
     <p>Peer into our "Crystal" File Viewer to see Photos, graphics, documents, PDFs, even the future! (Not really.) But so many companies have need for a centralized way to store all of their business documents. Instead of being forced to signup for a secondary service and all that entails; Mystic provides a simple, intuitive interface, ensuring that you only have one place to visit and navigate for all of your storage needs.</p>
-    <h4>Privacy</h4>
+    <h4>Your Privacy is </h4>
     <p>
       Above all else, we respect your data privacy. Some companies try to spell out extensive limitations on what you can or can’t do with your information, or even try to put clauses in about reselling or restricting your data. We don’t believe in any of those notions. We champion the “Your Data, Your Rules” school of thought. We will never try to restrict your usage, and if you ever decide to leave our platform, we provide easy access to your data to allow you to transfer as painlessly as possible.
     </p>

@@ -6,23 +6,19 @@ module.exports = function (ctx) {
     plugins: [
     ],
     css: [
-      'app.styl'
     ],
     extras: [
-      ctx.theme.mat ? 'roboto-font' : null,
-      'material-icons',
-      ctx.theme.ios ? 'ionicons' : null,
-      // 'mdi',
-      // 'fontawesome'
     ],
-    supportIE: false,
     build: {
       scopeHoisting: true,
       vueRouterMode: 'history',
-      // vueCompiler: true,
-      // gzip: true,
+      gzip: true,
+      minify: true,
+      webpackManifest: true,
+      sourceMap: true,
       // analyze: true,
-      // extractCSS: false,
+      extractCSS: true,
+      // useNotifier: false,
       extendWebpack (cfg) {
         cfg.module.rules.push({
           enforce: 'pre',
@@ -40,36 +36,18 @@ module.exports = function (ctx) {
     // framework: 'all' --- includes everything; for dev only!
     framework: {
       components: [
-        'QLayout',
-        'QLayoutHeader',
-        'QLayoutDrawer',
-        'QPageContainer',
-        'QPage',
-        'QToolbar',
-        'QToolbarTitle',
-        'QBtn',
-        'QIcon',
-        'QList',
-        'QListHeader',
-        'QItem',
-        'QItemMain',
-        'QItemSide'
       ],
       directives: [
-        'Ripple'
       ],
       // Quasar plugins
       plugins: [
-        'Notify'
-      ],
-      iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
+      ]
     },
     // animations: 'all' --- includes all animations
     animations: [
     ],
     pwa: {
-      // workboxPluginMode: 'InjectManifest',
-      // workboxOptions: {},
+      cacheExt: 'js,html,css,ttf,eot,otf,woff,woff2,json,svg,gif,jpg,jpeg,png,wav,ogg,webm,flac,aac,mp4,mp3',
       manifest: {
         // name: 'Quasar App',
         // short_name: 'Quasar-PWA',
@@ -108,16 +86,13 @@ module.exports = function (ctx) {
       }
     },
     cordova: {
-      // id: 'org.cordova.quasar.app'
+       id: 'site.mystic.com'
     },
     electron: {
-      // bundler: 'builder', // or 'packager'
       extendWebpack (cfg) {
-        // do something with Electron process Webpack cfg
+        // do something with cfg
       },
       packager: {
-        // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
-
         // OS X / Mac App Store
         // appBundleId: '',
         // appCategoryType: '',
@@ -126,12 +101,10 @@ module.exports = function (ctx) {
 
         // Window only
         // win32metadata: { ... }
-      },
-      builder: {
-        // https://www.electron.build/configuration/configuration
-
-        // appId: 'quasar-app'
       }
-    }
+    },
+
+    // leave this here for Quasar CLI
+    starterKit: '1.0.2'
   }
 }
